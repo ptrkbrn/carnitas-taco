@@ -142,10 +142,10 @@ nav ul li {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
     height: 0 !important;
     opacity: 0;
-    transition: visibility 0s, opacity 0.5s linear;
+    /* transition: visibility 0s, opacity 0.5s linear; */
 }
 
 .lightMode {
@@ -167,5 +167,11 @@ nav ul li {
     }
     #about div p {
         max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 635px) {
+    #projects .content {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
