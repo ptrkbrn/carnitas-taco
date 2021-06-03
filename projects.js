@@ -7,7 +7,7 @@ const projects = [
     },
     {
         title: "CRWS Beer App",
-        description: "Built with Python and Flask, with a Postgres database. Designed and built for Country Roads Wine & Spirits. App features user profiles and server-side authentication. Users can add, update, and remove breweries, beers and distributors, as well as upload information such as price, ABV as well as images. Image hosting is handled with AWS. Deployed on Heroku. Final project for Harvard CS50.",
+        description: "Built with Python and Flask, with a Postgres database. Designed and built for Country Roads Wine & Spirits. Users can add, update, and remove breweries, beers and distributors, as well as upload information such as price, ABV as well as images. When a user adds a new brewery to the database, the information is first checked against a third-party API to ensure it's accurate and formatted correctly. Image hosting is handled with AWS. Deployed on Heroku. Final project for Harvard CS50.",
         liveLink: "https://guarded-thicket-25407.herokuapp.com/",
         codeLink: "https://github.com/ptrkbrn/dollar-slice",
     },

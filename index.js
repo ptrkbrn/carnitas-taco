@@ -6,10 +6,10 @@
             const btnArray = Array.from(document.getElementsByClassName('nav-btn'));
             btnArray.map(button => button.classList.remove('selected'));
             e.classList.add('selected')
-            document.getElementById(selectedPage).classList.add('fadeIn');
+            // document.getElementById(selectedPage).classList.add('fadeIn');
             Array.from(pages).map(page => page.classList.add('hidden'));
             document.getElementById(selectedPage).classList.remove('hidden');
-            document.getElementById(selectedPage).classList.add('fadeIn');
+            // document.getElementById(selectedPage).classList.add('fadeIn');
         };
 
         // toggles dark mode

@@ -21,8 +21,10 @@ main {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    justify-content: center;
+    justify-content: flex-start;
     text-align: center;
+    padding-top: 50px;
+    box-sizing: border-box;
 }
 
 section {
@@ -51,8 +53,26 @@ h1 {
     font-weight: 600;
 }
 
+#landing {
+    margin: auto;
+}
+
 #landing div {
     text-align: left;
+    margin-top: -50px;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-start;
+}
+
+#contact div {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #about div {
@@ -123,7 +143,7 @@ nav ul li {
 
 .hidden {
     display: none;
-    height: 0;
+    height: 0 !important;
     opacity: 0;
     transition: visibility 0s, opacity 0.5s linear;
 }
@@ -136,4 +156,16 @@ nav ul li {
 .darkMode {
     background-color: black;
     color: white;
+}
+
+@media only screen and (max-width: 959px) {
+    #projects .content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #about div {
+        flex-direction: column-reverse;
+    }
+    #about div p {
+        max-width: 70%;
+    }
 }
