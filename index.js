@@ -96,20 +96,6 @@
 
                 // appends each project tile to the content element
                 document.querySelector('.content').append(projectTile);
-
-                // let projectTile = document.createElement(
-                //         `<div class="project-header">
-                //             <h3>${project.title}</h3>
-                //         </div>
-                //         <hr></hr>
-                //         <div class="project-description">
-                //             <p class="project-text">${preview}</p>
-                //             <button class="toggle-text" onclick="showMore(this)">Show more</button>
-                //         </div>
-                //         <hr></hr>
-                //         <footer><a href="https://codepen.io/ptrkbrn/pen/mNwLqG" target="_blank">Frasier Docs Page</a></footer>
-                //     </div>`
-                // )
             });
 
             // handles expanding/collapsing project tile description text
