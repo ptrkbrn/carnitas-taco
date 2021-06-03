@@ -16,6 +16,11 @@
     </head>
     <body>
     	<nav id="navbar" class="lightMode">
+            <ul id="theme-toggle">
+                <button id="light-mode-btn" onclick="setTheme(false)">Light mode</button>
+                |
+                <button id="dark-mode-btn" onclick="setTheme(true)">Dark mode</button>
+            </ul>
             <ul>
                 <li><button value="about" class="nav-btn" onClick="changePage(this)">About</button></li>
                 <li><button value="projects" class="nav-btn" onClick="changePage(this)">Projects</button></li>

@@ -91,7 +91,7 @@ nav {
 	box-sizing: border-box;
 	min-height: 50px;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-between;
 	padding: 0 1em;
 	position: fixed;
 	width: 100%;
