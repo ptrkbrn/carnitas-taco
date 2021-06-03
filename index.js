@@ -16,36 +16,16 @@
         setTheme = (theme) => {
             let darkMode = theme;
             if (darkMode) {
-                document.querySelector('body').classList.add('darkMode');
-                document.querySelector('body').classList.remove('darkMode');
-                document.querySelector('nav').classList.add('darkMode');
-                document.querySelector('nav').classList.remove('lightMode');
-                Array.from(document.querySelectorAll('button')).map(btn => btn.classList.add('darkMode'));
-                Array.from(document.querySelectorAll('button')).map(btn => btn.classList.remove('lightMode'));
-                Array.from(document.querySelectorAll('section')).map(el => el.classList.add('darkMode'));
-                Array.from(document.querySelectorAll('section')).map(el => el.classList.remove('lightMode'));
-                Array.from(document.querySelectorAll('a')).map(a => a.classList.add('darkMode'));
-                Array.from(document.querySelectorAll('a')).map(a => a.classList.remove('lightMode'));
-                document.querySelector('main').classList.add('darkMode');
-                document.querySelector('main').classList.remove('lightMode');
+                Array.from(document.body.getElementsByTagName("*")).map(el => el.classList.add('darkMode'));
+                Array.from(document.body.getElementsByTagName("*")).map(el => el.classList.remove('lightMode'));
                 // toggles which button is selected
                 document.getElementById('dark-mode-btn').classList.add('selected');
                 document.getElementById('light-mode-btn').classList.remove('selected');
                 document.querySelector('img').style.borderColor = "white";
 
             } else {
-                document.querySelector('body').classList.add('lightMode');
-                document.querySelector('body').classList.remove('darkMode');
-                document.querySelector('nav').classList.add('lightMode');
-                document.querySelector('nav').classList.remove('darkMode');
-                Array.from(document.querySelectorAll('button')).map(btn => btn.classList.add('lightMode'));
-                Array.from(document.querySelectorAll('button')).map(btn => btn.classList.remove('darkMode'));
-                Array.from(document.querySelectorAll('section')).map(el => el.classList.add('lightMode'));
-                Array.from(document.querySelectorAll('section')).map(el => el.classList.remove('darkMode'));
-                Array.from(document.querySelectorAll('a')).map(a => a.classList.add('lightMode'));
-                Array.from(document.querySelectorAll('a')).map(a => a.classList.remove('darkMode'));
-                document.querySelector('main').classList.add('lightMode');                   
-                document.querySelector('main').classList.remove('darkMode');  
+                Array.from(document.body.getElementsByTagName("*")).map(el => el.classList.add('lightMode'));
+                Array.from(document.body.getElementsByTagName("*")).map(el => el.classList.remove('darkMode'));
                 // toggles which button is selected
                 document.getElementById('light-mode-btn').classList.add('selected');
                 document.getElementById('dark-mode-btn').classList.remove('selected');      
