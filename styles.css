@@ -92,7 +92,7 @@ h1 {
 
 #about div p {
     max-width: 40%;
-    text-align: left;
+    text-align: justify;
     margin-left: 1em;
 }
 

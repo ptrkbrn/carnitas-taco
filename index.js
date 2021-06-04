@@ -19,6 +19,7 @@
 
         // allows navigation back
         window.onpopstate = function(e) {
+            console.log(e)
             if (e.state != null) {
                 changePage(e.state);
             }
