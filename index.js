@@ -53,7 +53,15 @@
             // shortens full project text to preview length, trims extraneous whitespace, and appends an ellipses
             function getPreview(text) {
                 return text.slice(0, 100).trim() + "...";
-            }            
+            }
+            
+            // if a user reloads a page with a pathname, users are presented with the page they were on instead of a 404.
+            const pathname = window.location.pathname.slice(1);
+            if (pathname) {
+                const currentPage = document.body.querySelector(`button[value='${pathname}]`);
+                changePage(currentPage);
+            }
+
             // generates project tile element for each object in the projects array
             projects.map(project => {
                 let preview = getPreview(project.description);
