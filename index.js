@@ -30,16 +30,16 @@
         setTheme = (theme) => {
             let darkMode = theme;
             if (darkMode) {
-                Array.from(document.body.getElementsByTagName("*")).map(el => el.classList.add('darkMode'));
-                Array.from(document.body.getElementsByTagName("*")).map(el => el.classList.remove('lightMode'));
+                Array.from(document.querySelectorAll("*")).map(el => el.classList.add('darkMode'));
+                Array.from(document.querySelectorAll("*")).map(el => el.classList.remove('lightMode'));
                 // toggles which button is selected
                 document.getElementById('dark-mode-btn').classList.add('selected');
                 document.getElementById('light-mode-btn').classList.remove('selected');
                 document.querySelector('img').style.borderColor = "white";
 
             } else {
-                Array.from(document.body.getElementsByTagName("*")).map(el => el.classList.add('lightMode'));
-                Array.from(document.body.getElementsByTagName("*")).map(el => el.classList.remove('darkMode'));
+                Array.from(document.querySelectorAll("*")).map(el => el.classList.add('lightMode'));
+                Array.from(document.querySelectorAll("*")).map(el => el.classList.remove('darkMode'));
                 // toggles which button is selected
                 document.getElementById('light-mode-btn').classList.add('selected');
                 document.getElementById('dark-mode-btn').classList.remove('selected');      
@@ -116,7 +116,7 @@
                 }
             }
             // sets inital page theme based on browser preferences
-            setTheme(false);
-            // setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
+            // setTheme(false);
+            setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
 
         }
