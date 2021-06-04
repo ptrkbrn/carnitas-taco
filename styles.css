@@ -187,4 +187,7 @@ nav ul li {
     nav {
         font-size: .8em;
     }
+    img {
+        margin: 2em;
+    }
 }
