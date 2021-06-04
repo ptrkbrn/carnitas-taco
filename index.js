@@ -57,6 +57,7 @@
             
             // if a user reloads a page with a pathname, users are presented with the page they were on instead of a 404.
             const pathname = window.location.pathname.slice(1);
+            console.log(pathname);
             if (pathname) {
                 const currentPage = document.body.querySelector(`button[value='${pathname}]`);
                 changePage(currentPage);
