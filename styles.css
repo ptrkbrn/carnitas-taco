@@ -179,6 +179,18 @@ nav ul li {
 
 @media only screen and (max-width: 520px) {
     h1 {
-        font-size: 5em;
+        font-size: 6em;
+    }
+    nav {
+        font-size: 2.2em;
+    }
+    main {
+        padding-top: 150px;
+    }
+    h3 {
+        font-size: 3em;
+    }
+    p {
+        font-size: 2em;
     }
 }
