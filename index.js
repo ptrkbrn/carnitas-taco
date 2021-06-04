@@ -13,8 +13,16 @@
 
             let stateData = { selectedPage };
 
+            // adds page navigation to browser history
             history.pushState(stateData, '', `/${selectedPage}`);;
         };
+
+        // allows navigation back
+        window.onpopstate = function(e) {
+            if (e.state != null) {
+                changePage(e.state);
+            }
+        }
 
         // toggles dark mode
         setTheme = (theme) => {
