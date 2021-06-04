@@ -168,29 +168,21 @@ nav ul li {
     }
     #about div p {
         max-width: 70%;
+        margin: 0;
+    }
+    #about div img {
+        max-width: 70%;
+    }
+    main {
+        padding-top: 80px;
+    }
+    h1 {
+        font-size: 3em;
     }
 }
 
 @media only screen and (max-width: 635px) {
     #projects .content {
         grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media only screen and (max-width: 520px) {
-    h1 {
-        font-size: 6em;
-    }
-    nav {
-        font-size: 2.2em;
-    }
-    main {
-        padding-top: 150px;
-    }
-    h3 {
-        font-size: 3em;
-    }
-    p {
-        font-size: 2em;
     }
 }
