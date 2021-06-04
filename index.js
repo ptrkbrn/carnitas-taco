@@ -20,8 +20,9 @@
         // allows navigation back
         window.onpopstate = function(e) {
             console.log(e)
+            const lastPage = document.body.querySelector(`button[value='${selectedPage}']`)
             if (e.state != null) {
-                changePage(e.state.selectedPage);
+                changePage(lastPage);
             }
         }
 
