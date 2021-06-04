@@ -21,7 +21,7 @@
         window.onpopstate = function(e) {
             console.log(e)
             if (e.state != null) {
-                changePage(e.state);
+                changePage(e.state.selectedPage);
             }
         }
 
