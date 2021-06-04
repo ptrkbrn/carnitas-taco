@@ -86,6 +86,8 @@ h1 {
     border-radius: 50%;
     border: 2px solid black;
     padding: .2em;
+    margin: 1em;
+    max-width: 70%;
 }
 
 #about div p {
@@ -170,19 +172,19 @@ nav ul li {
         max-width: 70%;
         margin: 0;
     }
-    #about div img {
-        max-width: 70%;
-    }
-    main {
-        padding-top: 80px;
-    }
-    h1 {
-        font-size: 3em;
-    }
 }
 
 @media only screen and (max-width: 635px) {
     #projects .content {
         grid-template-columns: repeat(1, 1fr);
+    }
+    main {
+        padding-top: 80px;
+    }
+    h1 {
+        font-size: 2em;
+    }
+    nav {
+        font-size: .8em;
     }
 }
