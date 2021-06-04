@@ -1,7 +1,7 @@
 const projects = [
     {
     title: "Frasier Title Card Generator",
-    description: "An app that allows users to generate their own custom images inspired by the interstitial title cards on the hit 90s sitcom \"Frasier.\" A WYSIWYG rich single page application, built with react and utilizing a third-party library to capture the image. Featuring custom SVGs and pure CSS animations.",
+    description: "An app that allows users to generate their own custom images inspired by the interstitial title cards on the hit 90s sitcom \"Frasier.\" A WYSIWYG rich single page application, built with react and utilizing a third-party library to capture the image. Featuring custom SVGs and pure CSS animations. Featured on The Takeout.",
     liveLink: "https://ptrkbrn.github.io/aggressive-zinfandel/",
     codeLink: "https://github.com/ptrkbrn/aggressive-zinfandel",
     },

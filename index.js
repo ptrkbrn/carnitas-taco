@@ -10,6 +10,10 @@
             Array.from(pages).map(page => page.classList.add('hidden'));
             document.getElementById(selectedPage).classList.remove('hidden');
             // document.getElementById(selectedPage).classList.add('fadeIn');
+
+            let stateData = { selectedPage };
+
+            history.pushState(stateData, '', `/${selectedPage}`);;
         };
 
         // toggles dark mode
@@ -51,7 +55,8 @@
                 let projectText = document.createElement('p');
                 let button = document.createElement('button');
                 let footer = document.createElement('footer');
-                let link = document.createElement('a');
+                let demoLink = document.createElement('a');
+                let codeLink = document.createElement('a');
                 title.innerText = project.title;
                 projectTile.setAttribute('class', 'project-tile');
                 header.setAttribute('class', 'project-header');
@@ -61,8 +66,10 @@
                 button.setAttribute('class', 'toggle-text');
                 button.setAttribute('onclick', 'showMore(this)');
                 button.innerText = "Show more";
-                link.setAttribute('href', project.liveLink);
-                link.innerText = "See it";
+                demoLink.innerText = "See it";
+                codeLink.innerText = "GitHub";
+                demoLink.setAttribute('href', project.liveLink);
+                codeLink.setAttribute('href', project.codeLink);
 
                 projectTile.append(header);
                 header.append(title);
@@ -72,7 +79,9 @@
                 projectTile.append(button);
                 projectTile.append(footer);
                 projectTile.append(hr);
-                footer.append(link);
+                footer.append(demoLink);
+                footer.append(" | ");
+                footer.append(codeLink);
 
                 // appends each project tile to the content element
                 document.querySelector('.content').append(projectTile);

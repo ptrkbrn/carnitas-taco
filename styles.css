@@ -108,11 +108,12 @@ h1 {
 
 .project-tile footer {
 	margin: 0;
-	padding: .5em;
+	padding: .5em 0;
 }
 
 .project-tile button {
     text-decoration: underline;
+    padding: 0;
 }
 
 nav {
@@ -173,5 +174,11 @@ nav ul li {
 @media only screen and (max-width: 635px) {
     #projects .content {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (max-width: 520px) {
+    h1 {
+        font-size: 5em;
     }
 }
