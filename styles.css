@@ -1,10 +1,10 @@
-* {
+/* * {
     transition: color 0.5s ease-in;
     transition: background-color 5s ease-in;
     -webkit-transition: background-color .5s ease-in;
     -o-transition: background-color .5s ease-in;
     -moz-transition: background-color .5s ease-in;
-}
+} */
 
 body {
     margin: 0;
@@ -139,9 +139,11 @@ nav button {
 }
 
 .fadeIn {
-    opacity: 1;
-    transition: opacity 500ms;
-    display: block;
+    transition: color 0.5s ease-in;
+    transition: background-color 5s ease-in;
+    -webkit-transition: background-color .5s ease-in;
+    -o-transition: background-color .5s ease-in;
+    -moz-transition: background-color .5s ease-in;
 }
 
 .hidden {
