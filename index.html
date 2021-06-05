@@ -11,8 +11,8 @@
         <link rel="icon" 
         type="image/png" 
         href="static/favicon.ico">    
-        <script type="text/javascript" src="projects.js"></script>
-        <script type="text/javascript" src=index.js></script>
+        <script src="projects.js"></script>
+        <script src=index.js></script>
         <!-- responsive meta tag -->
         <meta name="viewport" content="width=device-width,initial-scale=1">
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,16 +27,16 @@
     </head>
     <body>
     	<nav id="navbar" class="lightMode">
-            <ul id="theme-toggle">
+            <div id="theme-toggle">
                 <button id="light-mode-btn" onclick="setTheme(false)">Light mode</button>
                 |
                 <button id="dark-mode-btn" onclick="setTheme(true)">Dark mode</button>
-            </ul>
-            <ul>
-                <li><button value="about" class="nav-btn" onClick="changePage(this)">About</button></li>
-                <li><button value="projects" class="nav-btn" onClick="changePage(this)">Projects</button></li>
-                <li><button value="contact" class="nav-btn" onClick="changePage(this)">Contact</button></li>
-            </ul>
+            </div>
+            <div>
+                <button value="about" class="nav-btn" onClick="changePage(this)">About</button>
+                <button value="projects" class="nav-btn" onClick="changePage(this)">Projects</button>
+                <button value="contact" class="nav-btn" onClick="changePage(this)">Contact</button>
+            </div>
         </nav>
         <main>
             <section id="landing" class="page lightMode">
