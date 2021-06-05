@@ -120,8 +120,3 @@
             setTheme(window.matchMedia('(prefers-color-scheme: dark)').matches);
 
         }
-
-        // document.addEventListener("DOMContentLoaded", () => alert("loaded!"));
-        setTimeout(() => {
-            Array.from(document.querySelectorAll("*")).map(el => el.classList.add('fadeIn'));
-        }, 500);
