@@ -6,7 +6,7 @@ function changePage(selectedPage, back) {
   const selectedBtn = document.querySelector(`button[value='${selectedPage}']`);
   btnArray.map((button) => button.classList.remove('selected'));
   Array.from(pages).map((page) => page.classList.add('hidden'));
-  if (selectedBtn) {
+  if (selectedBtn !== null) {
     selectedBtn.classList.add('selected');
     document.getElementById(selectedPage).classList.remove('hidden');
   } else {
@@ -28,7 +28,7 @@ function changePage(selectedPage, back) {
 window.onpopstate = function (e) {
   console.log(e);
   if (e.state != null) {
-    const lastPage = document.body.querySelector(`button[value='${e.state.selectedPage}']`);
+    const lastPage = e.state.selectedPage;
     changePage(lastPage, true);
   }
 };
