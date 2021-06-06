@@ -13,8 +13,11 @@ function changePage(e) {
 
   const stateData = { selectedPage };
 
-  // adds page navigation to browser history
-  history.pushState(stateData, '', `/${selectedPage}`);
+  // if the function isn't triggered by the back button
+  if (!window.onpopstate) {
+    // adds page navigation to browser history
+    history.pushState(stateData, '', `/${selectedPage}`);
+  }
 }
 
 // allows navigation back
