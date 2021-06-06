@@ -26,11 +26,14 @@ function changePage(selectedPage, back) {
 
 // allows navigation back
 window.onpopstate = function (e) {
-  console.log(e);
+  let lastPage;
   if (e.state != null) {
-    const lastPage = e.state.selectedPage;
-    changePage(lastPage, true);
+    lastPage = e.state.selectedPage;
+  } else {
+    // if no selected page, default to landing.
+    lastPage = 'landing';
   }
+  changePage(lastPage, true);
 };
 
 // toggles dark mode
