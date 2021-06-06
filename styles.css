@@ -154,10 +154,6 @@ nav button {
     -moz-transition: background-color .5s ease-in, color .5s ease-in;
 }
 
-h1:hover {
-    color: blue;
-}
-
 .hidden {
     display: none !important;
     height: 0 !important;
