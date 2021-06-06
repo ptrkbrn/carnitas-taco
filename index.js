@@ -1,14 +1,18 @@
 const pages = document.getElementsByClassName('page');
 
 // handles navigation between pages
-function changePage(e, back) {
-  const selectedPage = e.value;
+function changePage(selectedPage, back) {
   const btnArray = Array.from(document.getElementsByClassName('nav-btn'));
+  const selectedBtn = document.querySelector(`button[value='${selectedPage}']`);
   btnArray.map((button) => button.classList.remove('selected'));
-  e.classList.add('selected');
-  // document.getElementById(selectedPage).classList.add('fadeIn');
   Array.from(pages).map((page) => page.classList.add('hidden'));
-  document.getElementById(selectedPage).classList.remove('hidden');
+  if (selectedBtn) {
+    selectedBtn.classList.add('selected');
+    document.getElementById(selectedPage).classList.remove('hidden');
+  } else {
+    document.getElementById('landing').classList.remove('hidden');
+  }
+  // document.getElementById(selectedPage).classList.add('fadeIn');
   // document.getElementById(selectedPage).classList.add('fadeIn');
 
   const stateData = { selectedPage };
