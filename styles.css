@@ -49,6 +49,10 @@ h1 {
     margin: 0;
 }
 
+h2 {
+    font-size: 1.17em;
+}
+
 .selected {
     font-weight: 600;
 }
@@ -92,7 +96,7 @@ h1 {
 
 #about div p {
     max-width: 40%;
-    text-align: justify;
+    text-align: left;
     margin-left: 1em;
 }
 
