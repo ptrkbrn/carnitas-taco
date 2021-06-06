@@ -139,11 +139,15 @@ nav button {
 }
 
 .fadeIn {
-    transition: color 0.5s ease-in;
-    transition: background-color 5s ease-in;
-    -webkit-transition: background-color .5s ease-in;
-    -o-transition: background-color .5s ease-in;
-    -moz-transition: background-color .5s ease-in;
+
+    transition: background-color .5s ease-in, color .5s ease-in;
+    -webkit-transition: background-color .5s ease-in, color .5s ease-in;
+    -o-transition: background-color .5s ease-in, color .5s ease-in;
+    -moz-transition: background-color .5s ease-in, color .5s ease-in;
+}
+
+h1:hover {
+    color: blue;
 }
 
 .hidden {
