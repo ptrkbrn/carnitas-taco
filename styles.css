@@ -138,6 +138,14 @@ nav button {
 	margin: 0;
 }
 
+#theme-toggle {
+    align-items: center;
+}
+
+#light-mode-btn {
+    border-right: 1px solid;
+}
+
 .fadeIn {
 
     transition: background-color .5s ease-in, color .5s ease-in;
