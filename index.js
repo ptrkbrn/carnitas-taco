@@ -23,8 +23,8 @@ function changePage(e, back) {
 // allows navigation back
 window.onpopstate = function (e) {
   console.log(e);
-  const lastPage = document.body.querySelector(`button[value='${e.state.selectedPage}']`);
   if (e.state != null) {
+    const lastPage = document.body.querySelector(`button[value='${e.state.selectedPage}']`);
     changePage(lastPage, true);
   }
 };
