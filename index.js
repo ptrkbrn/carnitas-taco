@@ -1,7 +1,7 @@
 const pages = document.getElementsByClassName('page');
 
 // handles navigation between pages
-function changePage(e) {
+function changePage(e, back) {
   const selectedPage = e.value;
   const btnArray = Array.from(document.getElementsByClassName('nav-btn'));
   btnArray.map((button) => button.classList.remove('selected'));
@@ -14,7 +14,7 @@ function changePage(e) {
   const stateData = { selectedPage };
 
   // if the function isn't triggered by the back button
-  if (!window.onpopstate) {
+  if (!back) {
     // adds page navigation to browser history
     history.pushState(stateData, '', `/${selectedPage}`);
   }
@@ -25,7 +25,7 @@ window.onpopstate = function (e) {
   console.log(e);
   const lastPage = document.body.querySelector(`button[value='${e.state.selectedPage}']`);
   if (e.state != null) {
-    changePage(lastPage);
+    changePage(lastPage, true);
   }
 };
 
