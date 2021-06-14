@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'React Todo App',
     description: 'Todo list application built with React. Mobile-first, responsive design. Users can add, update, and remove todos. App uses LocalStorage for basic data persistence.',
-    liveLink: 'ptrkbrn.com',
+    liveLink: 'https://ptrkbrn.github.io/todo-list/',
     codeLink: 'https://github.com/ptrkbrn/todo-list',
   },
 ];
