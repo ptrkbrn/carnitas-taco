@@ -1,5 +1,11 @@
 const projects = [
   {
+    title: 'I Think You Should Meme',
+    description: 'An I Think You Should Leave screenshot database and meme generator. A fullstack app built on a Postgres/Node/Express/React stack. Users can search by a line of dialogue, select a screenshot and then download the screenshot with or without a caption, which is optionally editable.',
+    liveLink: 'http://wwww.ithinkyoushouldme.me',
+    codeLink: 'https://https://github.com/ptrkbrn/fully-loaded-nachos',
+  },
+  {
     title: 'Frasier Title Card Generator',
     description: 'An app that allows users to generate their own custom images inspired by the interstitial title cards on the hit 90s sitcom "Frasier." A WYSIWYG rich single page application, built with react and utilizing a third-party library to capture the image. Featuring custom SVGs and pure CSS animations. Featured on The Takeout.',
     liveLink: 'https://ptrkbrn.github.io/aggressive-zinfandel/',
